@@ -1,0 +1,18 @@
+What Are Reducers?
+	- is a function that returns a piece of the application state
+	- creating a reducer is a 2-step process
+		- creating the reducer
+		- wiring it into our application so that it is available from any file
+	- you can import the reducer like you would a custom component
+	- by passing our reducer as a value of state inside of our combineReducer function we are telling redux how to create our app state
+	- we must connect our React views and Redux state to make a useable application
+	- we must use the ReactRedux library to merge the two together
+	- we're going to change one of our components into a container
+		- a container is a react component that has a direct connection to the state managed by Redux
+
+How can we tell which components we need to promote to containers?
+	- in general we want to change the most parent component into a container
+	- we are going to make BookList and BookDetail containers
+	- whenever we forge a connection between a component and Redux we are turning that component into a container or smart component
+	- pulling the connect property from the react-redux library. This will help us forge the connection
+	- 
